@@ -1,0 +1,211 @@
+        *{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: serif;
+    font-size: 12px;
+    background: whitesmoke;
+}
+
+h1 {
+  margin:0 auto;
+   margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  writing-mode: vertical-rl;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  letter-spacing: 4px;
+  line-height: 35px;
+  font-family: serif;
+
+}
+
+hr {
+    margin:50px;
+    border: 0.5px dashed black;
+}
+
+.fadetext {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  animation: fade 2s ease-in-out infinite;
+}   
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  60%  { opacity: 0.01; } /* 사라짐 */
+  80%  { opacity: 0.01; } /* 사라진 상태 유지 */
+  100% { opacity: 1; }    /* 다시 나타남 */
+}
+
+.fadetext:hover {
+  text-decoration: underline 1px;
+  font-style: italic;
+}
+
+
+
+
+p {
+    font-size: 14px;
+    margin:30px;
+    text-align: center;
+}
+details {
+    cursor: pointer;
+}
+
+details summary {
+  margin-bottom: 0px;
+}
+
+.indent {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline 1px;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::marker {
+  color: transparent;
+}
+
+summary {
+    font-weight: 700;
+}
+
+summary::before {
+  content: "";
+}
+
+summary.japan {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  padding-bottom: 1.5px;
+  background: #a569ff;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+summary.japan:hover {
+  transform: rotate(30deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+summary.korea {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  padding-bottom: 1.5px;
+  background: #ff9600;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+summary.korea:hover {
+  transform: rotate(-20deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+summary.china {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  padding-bottom: 1.5px;
+  background: #554dff;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+summary.china:hover {
+  transform: rotate(-20deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+summary.thai {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  padding-bottom: 1.5px;
+  background: #55f21c;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+summary.thai:hover {
+  transform: rotate(-60deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+summary.germany {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  padding-bottom: 1.5px;
+  background: #ffff00;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+summary.thai:hover {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+li::marker {
+    color: ; 
+    font-size: ; 
+    content: ""; 
+}
+
+img {
+    height:150px;
+}
+
+.category-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;   
+  padding: 0 70px;           
+  box-sizing: border-box;
+}
+
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: grey;
+}
+
+.footertext {
+  color: inherit;
+  font-style: italic;
+}
+
+.footertext:hover {
+  text-decoration: underline 1px;
+  font-style: normal;
+}
+
+
